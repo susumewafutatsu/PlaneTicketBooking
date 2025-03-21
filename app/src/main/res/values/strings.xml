@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Plane-Ticket-Booking</string>
+    <string name="skybird">skybird</string>
+    <string name="intro_title">Fly anywhere easily\nwithout obstcales</string>
+    <string name="intro_subtitle">Experience the unparalleled\nfreedom of unhidered\nflight as you effortlessly travers</string>
+    <string name="get_started">Get Started</string>
+    <string name="search_flights">Search Flights</string>
+    <string name="from">from</string>
+    <string name="toShort">to</string>
+</resources>
