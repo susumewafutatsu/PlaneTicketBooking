@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.example.plane_ticket_booking.Adapter.FlightAdapter;
 import com.example.plane_ticket_booking.Model.Flight;
 import com.example.plane_ticket_booking.R;
 import com.example.plane_ticket_booking.databinding.ActivityIntroBinding;
@@ -30,7 +31,7 @@ public class SearchActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityIntroBinding.inflate(getLayoutInflater());
+        binding = ActivitySearchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         getIntentExtra();
@@ -56,7 +57,7 @@ public class SearchActivity extends BaseActivity {
 //                        }
                         if(list.isEmpty()){
                             binding.searchView.setLayoutManager(new LinearLayoutManager(SearchActivity.this,LinearLayoutManager.VERTICAL,false));
-                            binding.searchView.setAdapter(new);
+                            binding.searchView.setAdapter(new FlightAdapter(list));
                         }
                     }
                 }
